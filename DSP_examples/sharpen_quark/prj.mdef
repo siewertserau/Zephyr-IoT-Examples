@@ -1,0 +1,6 @@
+% Application       : PSF
+
+% TASK NAME  		PRIO 	ENTRY 		STACK GROUPS
+% ==========================================================
+  TASK MAIN_TASK    	1 	main  		2048 [EXE]
+  TASK TRANS_TASK    	1 	transform  	2048 [FPU]

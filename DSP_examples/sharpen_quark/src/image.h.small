@@ -1,0 +1,12 @@
+#define IMG_HEIGHT (3)
+#define IMG_WIDTH (4)
+
+typedef unsigned char UINT8;
+
+// Test image data
+UINT8 GrayVal[IMG_HEIGHT*IMG_WIDTH] =
+{
+    0, 1, 2, 3,
+    0, 1, 2, 3,
+    0, 1, 2, 3,
+};
