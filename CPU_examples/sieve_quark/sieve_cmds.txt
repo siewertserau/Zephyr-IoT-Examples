@@ -1,0 +1,875 @@
+    1  sudo apt-get update
+    2  sudo apt-get install git make gcc gcc-multilib g++ libc6-dev-i386 g++-multilib
+    3  pwd
+    4  git clone https://gerrit.zephyrproject.org/r/zephyr zephyr-project
+    5  ls
+    6  cd zephyr-project/
+    7  ls
+    8  source zephyr-env.sh 
+    9  cd $ZEPHYR_BASE
+   10  ls
+   11  ./boards/arduino_101/support/arduino_101_backup.sh 
+   12  vi zephyr-env.sh 
+   13  source zephyr-env.sh 
+   14  vi zephyr-env.sh 
+   15  source zephyr-env.sh 
+   16  cd $ZEPHYR_BASE
+   17  ./boards/arduino_101/support/arduino_101_backup.sh 
+   18  ls
+   19  cd boards/arduino_101/support/
+   20  ls
+   21  ./arduino_101_load.sh rom
+   22  cd $ZEPHYR_BASE/samples/hello_world/nanokernel
+   23  ls
+   24  make pristine && make BOARD=arduino_101_ss ARCH=arc
+   25  make pristine && make BOARD=arduino_101_sss ARCH=arc
+   26  source /home/siewerts/zephyr-project/zephyr-env.sh 
+   27  ls
+   28  make pristine && make BOARD=arduino_101_sss ARCH=arc
+   29  source /home/siewerts/zephyr-project/zephyr-env.sh 
+   30  echo $ZEPHYR_GCC_VARIANT
+   31  printenv
+   32  printenv | grep ZEPHYR
+   33  cd
+   34  ls
+   35  cd zephyr-project/
+   36  ls
+   37  source zephyr-env.sh 
+   38  printenv | grep ZEPH
+   39  vi zephyr-env.sh 
+   40  source zephyr-env.sh 
+   41  printenv | grep ZEPH
+   42  cd $ZEPHYR_BASE/samples/hello_world/nanokernel
+   43  make pristine && make BOARD=arduino_101_sss ARCH=arc
+   44  printenv | grep ZEPH
+   45  ls
+   46  make BOARD=arduino_101_sss flash
+   47  ls
+   48  make pristine && make BOARD=arduino_101 ARCH=x86
+   49  make BOARD=arduino_101 flash
+   50  make pristine
+   51  make BOARD=qemu_x86 qemu
+   52  cd ..
+   53  ls
+   54  l
+   55  ls
+   56  git clone https://github.com/transductivellc/Quark.git Quark
+   57  ls
+   58  cd Quark
+   59  ls
+   60  cd DSP
+   61  ls
+   62  cd ..
+   63  ls
+   64  cd pattern-match/
+   65  ls
+   66  cd dct2
+   67  ls
+   68  make
+   69  time ./dct2
+   70  nice --19 time ./dct2
+   71  sudo nice --19 time ./dct2
+   72  sudo time ./dct2
+   73  time ./dct2
+   74  sudo time nice --19 ./dct2
+   75  ls
+   76  vi dct2.c
+   77  make
+   78  make clena
+   79  make clean
+   80  make
+   81  ls
+   82  ./dct2
+   83  time ./dct2
+   84  ls
+   85  cd ..
+   86  ls
+   87  cd ..
+   88  ls
+   89  cd ..
+   90  ls
+   91  cd hello_world/
+   92  LS
+   93  ls
+   94  cd microkernel/
+   95  ls
+   96  cd src
+   97  ls
+   98  cd ..
+   99  ls
+  100  cd ..
+  101  ls
+  102  cd nanokernel/
+  103  ls
+  104  cd outdir
+  105  ls
+  106  cd ..
+  107  ls
+  108  cd ..
+  109  ls
+  110  cd microkernel/
+  111  ls
+  112  vi README.txt 
+  113  ls
+  114  cd ..
+  115  ls
+  116  cd Quark
+  117  ls
+  118  cd pattern-match/
+  119  ls
+  120  cd mkdir dct2_quark
+  121  mkdir dct2_quark
+  122  ls
+  123  cd dct2_quark
+  124  cp ../dct2/dct2.c src/dct2.c
+  125  ls
+  126  cp ../../../hello_world/microkernel/* .
+  127  cp -r ../../../hello_world/microkernel/src .
+  128  ls
+  129  cd src
+  130  ls
+  131  vi main.c
+  132  ls
+  133  cd ..
+  134  ls
+  135  make
+  136  make BOARD=qemu_x86 qemu
+  137  vi main.c
+  138  ls
+  139  cd src
+  140  ls
+  141  vi main.c
+  142  cd ..
+  143  pwd
+  144  make BOARD=qemu_x86 qemu
+  145  ls
+  146  cd src
+  147  ls
+  148  vi main.c
+  149  ls
+  150  cd ..
+  151  ls
+  152  make BOARD=qemu_x86 qemu
+  153  ls
+  154  cd ..
+  155  ls
+  156  git add dct2_quark
+  157  cd ..
+  158  ls
+  159  git commit -a
+  160  ls
+  161  git config --global user.email "transductivellc@gmail.com"
+  162  git config --global user.name "transductivellc"
+  163  git commit -a
+  164  ls
+  165  cd pattern-match/
+  166  ls
+  167  make pristine && make BOARD=arduino_101 ARCH=x86
+  168  make BOARD=arduino_101 ARCH=x86
+  169  ls
+  170  cd dct2_quark/
+  171  make pristine && make BOARD=arduino_101 ARCH=x86
+  172  make BOARD=arduino_101 flash
+  173  ls
+  174  cd ..
+  175  ls
+  176  cd dct2_quark/
+  177  ls
+  178  cd ..
+  179  ls
+  180  zip -r dct2_quark/
+  181  zip -r dct2_quark.zip dct2_quark/
+  182  LS
+  183  ls
+  184  zip -r dct2.zip dct2
+  185  ls
+  186  cd dct2_quark/
+  187  ls
+  188  cd src
+  189  ls
+  190  cd ..
+  191  ls
+  192  pwd
+  193  ls
+  194  cd ..
+  195  ls
+  196  cd dct1
+  197  cd dct2
+  198  ls
+  199  cd ..
+  200  ls
+  201  cd dct2_quark/
+  202  ls
+  203  cd src
+  204  ls
+  205  cd ..
+  206  ls
+  207  cd ..
+  208  ls
+  209  cd ..
+  210  ls
+  211  cd ..
+  212  ls
+  213  cd Quark/
+  214  ls
+  215  cd pattern-match/
+  216  ls
+  217  cd dct2_quark/
+  218  ls
+  219  vi Makefile 
+  220  ls
+  221  history
+  222  ls
+  223  cd src
+  224  ls
+  225  vi main.c
+  226  ls
+  227  vi zephyr-env_install.bash
+  228  mv zephyr-env_install.bash .zephryrc
+  229  vi .zephryrc 
+  230  cd Pictures/
+  231  ls
+  232  cd ..
+  233  vi .zephryrc 
+  234  mv .zephryrc .zephyrrc
+  235  ls
+  236  ls
+  237  cd Downloads/
+  238  ls
+  239  ls -l
+  240  sudo useradd -G plugdev $USERNAME
+  241  sudo useradd -G plugdev siewerts
+  242  ls
+  243  groups
+  244  visudo
+  245  sudo usermod -a -G plugdev siewerts
+  246  groups
+  247  ls -la
+  248  ls
+  249  su -
+  250  sudo root
+  251  sudo su root
+  252  su -
+  253  sudo udevadm control --reload-rules
+  254  dmesg
+  255  ls
+  256  sudo su
+  257  ls
+  258  cd Documents/
+  259  ls
+  260  cd ..
+  261  ls
+  262  cd Pictures/
+  263  ls
+  264  cd
+  265  ls
+  266  cd Desktop/
+  267  ls
+  268  cd ..
+  269  ls
+  270  cd $ZEPHRY_BASE
+  271  ls
+  272  cd $ZEPHYR_BASE
+  273  ls
+  274  cd zephyr-project/
+  275  ls
+  276  source zephyr-env.sh 
+  277  pwd
+  278  cd samples/
+  279  cd Quark/
+  280  ls
+  281  cd pattern-match/
+  282  ls
+  283  cd dct2
+  284  ls
+  285  vi dct2.c
+  286  ls
+  287  cd zephyr-project/
+  288  ls
+  289  cd boards/
+  290  ls
+  291  cd $ZEPHYR_BASE
+  292  ls
+  293  cd zephyr-project/
+  294  ls
+  295  cd samples/
+  296  cd hello_world/
+  297  ls
+  298  cd microkernel/
+  299  ls
+  300  cd src
+  301  ls
+  302  vi main.c
+  303  ls
+  304  vi main.c
+  305  ls
+  306  cd zephyr-project/
+  307  ls
+  308  cd samples/
+  309  ls
+  310  history | grep source
+  311  rfkill ublock all
+  312  rfkill unblock all
+  313  sudo /etc/init.d/networking restart
+  314  sudo vi /etc/udev/rules.d/70-persistent-net.rules 
+  315  ls
+  316  cd Quar
+  317  cd Quark/
+  318  ls
+  319  cd pattern-match/
+  320  ls
+  321  cd dct2_quark/
+  322  ls
+  323  make pristine && make BOARD=arduino_101_sss ARCH=arc
+  324  pwd
+  325  ls
+  326  make pristine
+  327  cd ..
+  328  ls
+  329  cd dct2_quark/
+  330  ls
+  331  history | grep source
+  332  source /home/siewerts/zephyr-project/zephyr-env.sh 
+  333  make pristine
+  334  make pristine && make BOARD=arduino_101_sss ARCH=arc
+  335  printenv | grep ZEPHYR
+  336  ls
+  337  cd ..
+  338  ls
+  339  cd ..
+  340  ls
+  341  cd ..
+  342  ls
+  343  cd hello_world/
+  344  ls
+  345  cd microkernel/
+  346  ls
+  347  make pristine
+  348  make BOARD=qemu_x86 qemu
+  349  make BOARD=arduino_101 ARCH=x86
+  350  make BOARD=arduino_101_sss ARCH=arc
+  351  ls
+  352  make BOARD=arduino_101 ARCH=x86
+  353  make BOARD=arduino_101 flash
+  354  ls
+  355  make pristine
+  356  make BOARD=arduino_101 ARCH=x86
+  357  make BOARD=arduino_101 flash
+  358  cd ..
+  359  ls
+  360  cd ..
+  361  ls
+  362  cd Quark/
+  363  ls
+  364  cd Quark-CPU/
+  365  ls
+  366  cd Eratosthenes-Sieve/
+  367  ls
+  368  cd ..
+  369  ls
+  370  cd dct2_quark/
+  371  ls
+  372  cd src
+  373  ls
+  374  vi main.c
+  375  cd ..
+  376  ls
+  377  cd ..
+  378  ls
+  379  mv dct2_quark/ sieve_quark
+  380  ls
+  381  cd sieve_quark/
+  382  ls
+  383  make pristine
+  384  ls
+  385  make BOARD=arduino_101 ARCH=x86
+  386  make BOARD=arduino_101 flash
+  387  ls
+  388  cd src
+  389  ls
+  390  vi main.c
+  391  cd ..
+  392  make pristine
+  393  make BOARD=arduino_101 ARCH=x86
+  394  make BOARD=arduino_101 flash
+  395  ls
+  396  cd ..
+  397  ls
+  398  rm main.c.save
+  399  ls
+  400  git add sieve_quark/
+  401  git commit -m
+  402  history | grep git
+  403  git commit -a
+  404  ls
+  405  history | grep git
+  406  git push
+  407  ls
+  408  cd sieve_quark/
+  409  ls
+  410  cd src
+  411  ls
+  412  cd ..
+  413  ls
+  414  cd ..
+  415  ls
+  416  ls
+  417  cd Downloads/
+  418  ls
+  419  history
+  420  ls
+  421  cd zephyr-project/
+  422  ls
+  423  cd samples/
+  424  ls
+  425  cd Quark/
+  426  ls
+  427  cd pattern-match/
+  428  ls
+  429  cd dct2_quark/
+  430  ls
+  431  cd src
+  432  ls
+  433  vi main.c
+  434  ls
+  435  vi Makefile 
+  436  ls
+  437  vi main.c
+  438  make
+  439  history | grep qemu
+  440  history
+  441  make BOARD=qemu_x86 qemu
+  442  ls
+  443  pwd
+  444  ls
+  445  history
+  446  history | grep make
+  447  make pristine
+  448  cd ..
+  449  ls
+  450  make pristine
+  451  pwd
+  452  cd ..
+  453  ls
+  454  make pristine
+  455  cd ..
+  456  make pristine
+  457  ls
+  458  cd ..
+  459  ls
+  460  make pristine
+  461  cd Quark
+  462  ls
+  463  history
+  464  source /home/siewerts/zephyr-project/zephyr-env.sh
+  465  ls
+  466  cd pattern-match/
+  467  ls
+  468  cd dct2_quark/
+  469  ls
+  470  make pristine
+  471  make BOARD=qemu_x86 qemu
+  472  ls
+  473  cd src
+  474  ls
+  475  vi main.c
+  476  cd ..
+  477  make pristine
+  478  make BOARD=qemu_x86 qemu
+  479  ls
+  480  make BOARD=qemu_x86 qemu
+  481  ls
+  482  cd ..
+  483  ls
+  484  cd ..
+  485  ls
+  486  cd ..
+  487  ls
+  488  cd ..
+  489  ls
+  490  cd application/
+  491  ls
+  492  cd ..
+  493  ls
+  494  cd samples/
+  495  ls
+  496  cd Quark/
+  497  ls
+  498  pwd
+  499  cd pattern-match/
+  500  ls
+  501  cd dct2_quark/
+  502  ls
+  503  make pristine
+  504  make BOARD=qemu_x86 qemu
+  505  ls
+  506  cd ..
+  507  ls
+  508  mv sine_quark/ ../Quark-CPU/eratos_sieve_quark
+  509  ls
+  510  cd ..
+  511  ls
+  512  Quark-CPU/
+  513  ls
+  514  cd Quark-CPU/
+  515  ls
+  516  cd eratos_sieve_quark/
+  517  ls
+  518  cd src
+  519  ls
+  520  vi main.c
+  521  ls
+  522  cd ..
+  523  ls
+  524  make pristine
+  525  make BOARD=qemu_x86 qemu
+  526  ls
+  527  cd src
+  528  ls
+  529  vi main.c
+  530  cd ..
+  531  ls
+  532  make BOARD=qemu_x86 qemu
+  533  make pristine
+  534  make BOARD=qemu_x86 qemu
+  535  vi main.c
+  536  ls
+  537  cd src
+  538  ls
+  539  vi main.c
+  540  make pristine
+  541  make BOARD=qemu_x86 qemu
+  542  cd ..
+  543  make pristine
+  544  make BOARD=qemu_x86 qemu
+  545  make pristine
+  546  ls
+  547  cd src
+  548  ls
+  549  vi main.c 
+  550  cd ..
+  551  make pristine
+  552  make BOARD=qemu_x86 qemu
+  553  ls
+  554  cd src
+  555  ls
+  556  vi main.c
+  557  cd ..
+  558  make pristine
+  559  make BOARD=qemu_x86 qemu
+  560  ls
+  561  cd src
+  562  ls
+  563  vi main.c
+  564  cd ..
+  565  ls
+  566  make pristine
+  567  make BOARD=qemu_x86 qemu
+  568  ls
+  569  cd src
+  570  ls
+  571  vi main.c
+  572  ls
+  573  mv main.c main.c.save
+  574  vi main.c
+  575  cd ..
+  576  make pristine
+  577  make BOARD=qemu_x86 qemu
+  578  ls
+  579  cd src
+  580  ls
+  581  mv main.c.save ../..
+  582  ls
+  583  cd ..
+  584  ls
+  585  cd ..
+  586  ls
+  587  rm -r eratos_sieve_quark/
+  588  cp -r ../pattern-match/dct2_quark .
+  589  ls
+  590  cd dct2_quark/
+  591  ls
+  592  make pristine
+  593  make BOARD=qemu_x86 qemu
+  594  ls
+  595  cd src
+  596  ls
+  597  mv main.c main.c.old
+  598  cp ../../main.c.save .
+  599  ls
+  600  mv main.c.save main.c
+  601  ls
+  602  vi main.c
+  603  cd ..
+  604  ls
+  605  make pristine
+  606  make BOARD=qemu_x86 qemu
+  607  ls
+  608  cd src
+  609  ls
+  610  vi main.c
+  611  cd ..
+  612  make pristine
+  613  make BOARD=qemu_x86 qemu
+  614  ls
+  615  cd src
+  616  ls
+  617  vi main.c
+  618  cd ..
+  619  make pristine
+  620  make BOARD=qemu_x86 qemu
+  621  ls
+  622  cd src
+  623  ls
+  624  vi main.c
+  625  cd ..
+  626  make pristine
+  627  make BOARD=qemu_x86 qemu
+  628  ls
+  629  cd src
+  630  ls
+  631  vi main.c
+  632  cd ..
+  633  ls
+  634  make pristine
+  635  make BOARD=qemu_x86 qemu
+  636  ls
+  637  cd src
+  638  ls
+  639  vi main.c
+  640  cd ..
+  641  make pristine
+  642  make BOARD=qemu_x86 qemu
+  643  cd src
+  644  ls
+  645  vi main.c
+  646  cd ..
+  647  make pristine
+  648  make BOARD=qemu_x86 qemu
+  649  ls
+  650  cd src
+  651  ls
+  652  rm main.c.old
+  653  ls
+  654  vi main.c
+  655  cd ..
+  656  make pristine
+  657  make BOARD=qemu_x86 qemu
+  658  ls
+  659  make pristine && make BOARD=arduino_101_ss ARCH=arc
+  660  make pristine && make BOARD=arduino_101_sss ARCH=arc
+  661  ls
+  662  cd Downloads/
+  663  ls
+  664  unzip rckt-newlibm-app-master.zip 
+  665  ls
+  666  cd rckt-newlibm-app-master/
+  667  ls
+  668  cd application/
+  669  ls
+  670  cd ...
+  671  cd ..
+  672  ls
+  673  cp -r application/ ~/zephyr-project/
+  674  cd
+  675  cd zephyr-project/
+  676  ls
+  677  cd application/
+  678  ls
+  679  make pristine
+  680  source /home/siewerts/zephyr-project/zephyr-env.sh
+  681  make pristine
+  682  ls
+  683  cd src
+  684  ls
+  685  make pristine
+  686  ls
+  687  make
+  688  ls
+  689  vi Makefile 
+  690  ls
+  691  cd ..
+  692  ls
+  693  make BOARD=qemu_x86 qemu
+  694  cd ..
+  695  ls
+  696  cd samples/
+  697  ls
+  698  cd Quark/
+  699  ls
+  700  cd pattern-match/
+  701  ls
+  702  cd dct2_quark/
+  703  ls
+  704  make BOARD=qemu_x86 qemu
+  705  ls
+  706  cd ..
+  707  ls
+  708  cp -r dct2_quark sine_quark
+  709  ls
+  710  cd sine_quark/
+  711  ls
+  712  cd src
+  713  ls
+  714  cp ~/zephyr-project/application/src/* .
+  715  ls
+  716  cd ..
+  717  ls
+  718  make BOARD=qemu_x86 qemu
+  719  ls
+  720  cd src
+  721  ls
+  722  vi main.c
+  723  cd ..
+  724  ls
+  725  make pristine 
+  726  make BOARD=qemu_x86 qemu
+  727  ls
+  728  grep built-in *
+  729  ls
+  730  pwd
+  731  ls
+  732  cd src
+  733  ls
+  734  cd ..
+  735  ls
+  736  make BOARD=qemu_x86 qemu
+  737  make pristine
+  738  ls
+  739  ls ~/zephyr-project/application/
+  740  cp ~/zephyr-project/application/prj.mdef .
+  741  cp ~/zephyr-project/application/prj_x86.conf prj.conf
+  742  ls
+  743  cp ~/zephyr-project/application/Makefile Makefile 
+  744  ls
+  745  make pristine
+  746  make BOARD=qemu_x86 qemu
+  747  ls
+  748  vi Makefile 
+  749  ls
+  750  vi README.txt 
+  751  ls
+  752  cd ..
+  753  ls
+  754  cd ..
+  755  ls
+  756  cd sensor/
+  757  ls
+  758  cd ..
+  759  ls
+  760  cd philosophers/
+  761  ls
+  762  cd microkernel/
+  763  ls
+  764  make pristine
+  765  make BOARD=qemu_x86 qemu
+  766  ls
+  767  clear
+  768  ls
+  769  cd ..
+  770  ls
+  771  cd ..
+  772  ls
+  773  cd power
+  774  ls
+  775  cd ..
+  776  ls
+  777  cd Quark/
+  778  ls
+  779  cd pattern-match/
+  780  ls
+  781  cd sine_quark/
+  782  ls
+  783  cp ../dct2_quark/prj.* .
+  784  cp ../dct2_quark/Makefile .
+  785  ls
+  786  make pristine
+  787  make BOARD=qemu_x86 qemu
+  788  ls
+  789  cd ..
+  790  ls
+  791  cd kmeans
+  792  ls
+  793  vi kmeans.
+  794  vi kmeans.c
+  795  ls
+  796  cd ..
+  797  ls
+  798  cd ..
+  799  ls
+  800  cd Quark-CPU/
+  801  ls
+  802  cd SECDED-ECC/
+  803  ls
+  804  cd ..
+  805  ls
+  806  cd Eratosthenes-Sieve/
+  807  ls
+  808  vi eratos.c
+  809  ls
+  810  vi eratos.c
+  811  cd ..
+  812  ls
+  813  cd pattern-match/
+  814  ls
+  815  cd dct2_quark/
+  816  ls
+  817  cd src
+  818  ls
+  819  vi main.c
+  820  history | grep make
+  821  ifconfig
+  822  rfkill list all
+  823  sudo rfkill unblock all
+  824  rfkill list all
+  825  sudo modprobe iwlwifi
+  826  dmesg | grep iwl
+  827  clear
+  828  ls
+  829  cd zephyr-project/
+  830  ls
+  831  cd samples/
+  832  ls
+  833  cd Quark/
+  834  ls
+  835  cd Quark-CPU/
+  836  ls
+  837  git prush
+  838  git push
+  839  ls
+  840  cd Eratosthenes-Sieve/
+  841  ls
+  842  vi eratos.cpp
+  843  ls
+  844  vi Makefile
+  845  ls
+  846  vi eratos.c
+  847  ls
+  848  pwd
+  849  cd ..
+  850  ls
+  851  cd sieve_quark/
+  852  ls
+  853  clear
+  854  make pristine
+  855  clear
+  856  ls
+  857  history | grep source
+  858  clear
+  859  source /home/siewerts/zephyr-project/zephyr-env.sh
+  860  make pristine
+  861  make BOARD=qemu_x86 qemu
+  862  ls
+  863  cd src
+  864  ls
+  865  vi main.c
+  866  pwd
+  867  cd ..
+  868  make BOARD=qemu_x86 qemu
+  869  make BOARD=arduino_101 ARCH=x86
+  870  make pristine
+  871  make BOARD=arduino_101 ARCH=x86
+  872  make BOARD=arduino_101 flash
+  873  ls
+  874  history
+  875  history > sieve_cmds.txt
