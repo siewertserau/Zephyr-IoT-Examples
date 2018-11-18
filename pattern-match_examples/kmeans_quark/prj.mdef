@@ -1,0 +1,5 @@
+% Application       : DCT
+
+% TASK NAME             PRIO    ENTRY           STACK GROUPS
+% ==========================================================
+  TASK MAIN_TASK        1       main            32768 [EXE,FPU]
